@@ -7,7 +7,7 @@ export default function CardWithImage() {
       <CardMedia
         component="img"
         height="140"
-        image="./public/project.png"
+        image="./assets/project.png"
         alt="Пример изображения"
       />
       <CardContent>
