@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-import Paper from '@mui/material/Paper'
-import Box from '@mui/material/Box'
-import TextField from '@mui/material/TextField'
-import Button from '@mui/material/Button'
-import Typography from '@mui/material/Typography'
+import { Paper, Box, TextField, Button, Typography } from '@mui/material'
 
 export default function Form({ onSubmit }) {
   const [name, setName] = useState('')
@@ -22,12 +18,30 @@ export default function Form({ onSubmit }) {
       <Typography variant="h6" sx={{ mb: 2 }}>
         Контактная форма
       </Typography>
-
-      <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-        <TextField label="Имя" value={name} onChange={(e) => setName(e.target.value)} fullWidth required />
-        <TextField label="Email" value={email} onChange={(e) => setEmail(e.target.value)} fullWidth required type="email" />
+      <Box
+        component="form"
+        onSubmit={handleSubmit}
+        sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
+      >
+        <TextField
+          label="Имя"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          fullWidth
+          required
+        />
+        <TextField
+          label="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          fullWidth
+          required
+          type="email"
+        />
         <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <Button type="submit" variant="contained">Отправить</Button>
+          <Button type="submit" variant="contained">
+            Отправить
+          </Button>
         </Box>
       </Box>
     </Paper>
