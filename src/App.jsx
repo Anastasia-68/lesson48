@@ -8,8 +8,7 @@ export default function App() {
       <CssBaseline />
       <Container className="app-container">
         <Box sx={{ mt: 4 }}>
-          <Typography variant="h4">Тестовый App — MUI & Vite</Typography>
-          <Typography sx={{ mt: 2 }}>Если вы видите это — базовая сборка работает.</Typography>
+        <Typography sx={{ mt: 2 }}>Если вы видите это — базовая сборка работает.</Typography>
         </Box>
       </Container>
     </div>
